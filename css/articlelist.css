@@ -1,4 +1,6 @@
-
+.article-cover img{
+	width: 80%;
+}
 /*.index-articlelist {
     margin: 0 auto;
 }

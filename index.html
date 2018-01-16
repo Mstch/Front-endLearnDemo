@@ -3,9 +3,11 @@
 
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="third-party/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/global.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="css/articlelist.css" />
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="third-party/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/angular.min.js"></script>
@@ -14,7 +16,7 @@
 	<body ng-app="indexApp">
 		<div class="holder">
 			<header ng-controller="publicHeaderCtrl" class="public-header">
-				<span><strong>TiddAr</strong><br />一个兴趣使然的无名zhizhangde小站</span>
+				<span><strong>TiddAr</strong><br />一个兴趣使然的无名<span id="qhong">zhizhangde</span>小站</span>
 				<ul class="public-header-nav">
 					<li ng-click="showHeaderNav()">
 						<a><span class="glyphicon glyphicon-menu-hamburger"></a>
@@ -45,7 +47,7 @@
                     <br />如 也
                 </article>
                 <article >
-                    <div >
+                    <div class="article-cover">
                         <a href="#"><img src="images/timg.jpg" /></a></div>
                         <div >
                             <div>

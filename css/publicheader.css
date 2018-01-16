@@ -42,3 +42,11 @@
 	height: 50px;
 	text-align: center;
 }
+
+#qhong:hover::after{
+	content: '这几个字母真的不是张伟晨写的';
+	position: absolute;
+	top:65%;
+	left:18%;
+	color: #A6E1EC;
+}
