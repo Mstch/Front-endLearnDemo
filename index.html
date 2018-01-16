@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="third-party/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="third-party/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+	</head>
+
+	<body ng-app="indexApp">
+		<div class="holder">
+			<header ng-controller="publicHeaderCtrl" class="public-header">
+				<span><strong>TiddAr</strong><br />一个兴趣使然的无名zhizhangde小站</span>
+				<ul class="public-header-nav">
+					<li ng-click="showHeaderNav()">
+						<a><span class="glyphicon glyphicon-menu-hamburger"></a>
+				</li>
+                <li class="public-header-nav-link"><a>全部</a></li>
+                <li class="public-header-nav-link"><a>随笔</a></li>
+                <li class="public-header-nav-link"><a>生活</a></li>
+                <li class="public-header-nav-link"><a>编程</a></li>
+                <li class="public-header-nav-link"><a>瞬间</a></li>
+            </ul>
+        </header> 
+        <main>
+        <nav class="index-nav row" >
+            <ul >
+                <li  class="index-nav-link col-md-2 col-md-offset-1 this" ng-click="changeArticleType(0)"><a>全 部</a></li>
+                <li  class="index-nav-link col-md-2" ng-click="changeArticleType(1)"><a>随 笔</a></li>
+                <li  class="index-nav-link col-md-2" ng-click="changeArticleType(2)"><a>生 活</a></li>
+                <li  class="index-nav-link col-md-2" ng-click="changeArticleType(3)"><a>编 程</a></li>
+                <li  class="index-nav-link col-md-2" ng-click="changeArticleType(4)"><a>瞬 间</a></li>
+            </ul>
+        </nav>
+        <div ng-controller="articlesCtrl">
+
+            <section class="articlelist">
+                <article ng-if="noArticle()" >
+                    空 空
+                    <br />
+                    <br />如 也
+                </article>
+                <article >
+                    <div >
+                        <a href="#"><img src="images/timg.jpg" /></a></div>
+                        <div >
+                            <div>
+                                <span>Oct 02 2017</span>
+							<h2><a href="#">TiddddddddddddAr</a></h2>
+							<p>空谷独吟无人识旧山歌<br>遥望行客来去俱匆匆 </p>
+		</div>
+		</div>
+		</article>
+		</section>
+		</div>
+		</main>
+		<footer>
+
+		</footer>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

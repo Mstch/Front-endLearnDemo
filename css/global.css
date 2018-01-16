@@ -1,0 +1,43 @@
+﻿@import url("publicheader.css");
+* {
+    font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height:101%
+}
+li{
+    list-style: none;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #ccc;
+}
+a {
+    color: #333;
+    text-decoration: none !important;
+    outline: 0;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+a:hover span,a:hover{
+    cursor: pointer;
+    color: #7184d0;
+}
+.glyphicon{
+    font-size: 25px;
+}
+.holder{
+	position: relative;
+	padding:300px 8% 0;
+}

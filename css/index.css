@@ -1,0 +1,53 @@
+.index-nav {}
+
+.index-nav-link {
+	display: inline-block;
+	text-align: center;
+	line-height: 2;
+}
+
+.index-nav-link a {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	padding: 3px 5px;
+	line-height: 2;
+	text-align: center;
+	width: 26px;
+}
+
+.index-nav .this a {
+	border: 1px solid #999;
+	border-radius: 15px;
+}
+
+
+/*.index-nav-link {
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 20%;
+    list-style: none;
+}
+    .index-nav-link a {
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        padding: 3px 5px;
+        line-height: 2;
+        text-align: center;
+        width: 26px;
+    }
+        .index-nav-link a:hover {
+            color: #7184d0;
+         }
+.index-nav .this a {
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+.index-footer {
+    position: relative;
+    background: url('../images/sea.jpg') center bottom repeat-x;
+    padding: 150px 0 150px;
+}
+*/

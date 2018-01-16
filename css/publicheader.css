@@ -1,0 +1,44 @@
+.public-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 3% 8% 0;
+	z-index: 9;
+}
+
+.public-header:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 180%;
+	background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+	background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0, #fff 100%);
+	content: '';
+	pointer-events: none;
+	z-index: -1;
+}
+
+.public-header span {
+	color: #444;
+}
+
+.public-header-nav {
+	width: 180px;
+	float: right;
+	list-style: none;
+}
+
+.public-header-nav-link {
+	display: none;
+}
+
+.public-header-nav li {
+	cursor: pointer;
+	height: 50px;
+	text-align: center;
+}
