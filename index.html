@@ -16,7 +16,7 @@
 	<body ng-app="indexApp">
 		<div class="holder">
 			<header ng-controller="publicHeaderCtrl" class="public-header">
-				<span><strong>TiddAr</strong><br />一个兴趣使然的无名<span id="qhong">zhizhangde</span>小站</span>
+				<span class="public-header-dec"><strong>TiddAr</strong><br />一个兴趣使然的无名<span id="qhong">zhizhangde</span>小站</span>
 				<ul class="public-header-nav">
 					<li ng-click="showHeaderNav()">
 						<a><span class="glyphicon glyphicon-menu-hamburger"></a>
@@ -31,11 +31,11 @@
         <main>
         <nav class="index-nav row" >
             <ul >
-                <li  class="index-nav-link col-md-2 col-md-offset-1 this" ng-click="changeArticleType(0)"><a>全 部</a></li>
-                <li  class="index-nav-link col-md-2" ng-click="changeArticleType(1)"><a>随 笔</a></li>
-                <li  class="index-nav-link col-md-2" ng-click="changeArticleType(2)"><a>生 活</a></li>
-                <li  class="index-nav-link col-md-2" ng-click="changeArticleType(3)"><a>编 程</a></li>
-                <li  class="index-nav-link col-md-2" ng-click="changeArticleType(4)"><a>瞬 间</a></li>
+                <li  class="index-nav-link col-xs-2 col-md-2 col-md-offset-1 this" ng-click="changeArticleType(0)"><a>全 部</a></li>
+                <li  class="index-nav-link col-xs-2 col-md-2" ng-click="changeArticleType(1)"><a>随 笔</a></li>
+                <li  class="index-nav-link col-xs-2 col-md-2" ng-click="changeArticleType(2)"><a>生 活</a></li>
+                <li  class="index-nav-link col-xs-2 col-md-2" ng-click="changeArticleType(3)"><a>编 程</a></li>
+                <li  class="index-nav-link col-xs-2 col-md-2" ng-click="changeArticleType(4)"><a>瞬 间</a></li>
             </ul>
         </nav>
         <div ng-controller="articlesCtrl">
